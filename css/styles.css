@@ -1,0 +1,398 @@
+html {
+  font-family: sans-serif;
+  /* 3 */
+}
+
+body {
+  margin: 0;
+  background: url(https://humblebundle-a.akamaihd.net/static/hashed/c403c040aaaa32e737e5eef2c8e7c92c67719988.png) no-repeat;
+  background-repeat: repeat-x;
+}
+
+/* The following variables are used to create equal spaced colums to organize data*/
+h2 {
+  display: inline-block;
+  height: 18px;
+  padding: 20px 3px 15px 3px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  line-height: normal;
+  text-decoration: none;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+/************************************************************************************************************
+MIXINS
+*************************************************************************************************************/
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+/* clearfix to create a liner gradient*/
+#wrapper {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+#nav1 {
+  width: 100%;
+  height: 50px;
+  background: #404040;
+}
+
+.navigation {
+  background: #404040;
+  width: 1020px;
+  color: white;
+  border-bottom: 1px solid black;
+  color: white;
+  margin: 0 auto;
+  height: 50px;
+}
+.navigation ul {
+  list-style-type: none;
+}
+.navigation li {
+  padding: 5px 10px 10px 5px;
+  float: left;
+}
+.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+/*top left hand menu*/
+.menu {
+  width: 40%;
+  float: left;
+  font-size: 16px;
+  margin: 0 0 0 10px;
+  height: 35px;
+}
+
+/*top right hand menu*/
+.menu2 {
+  width: 30%;
+  float: right;
+  margin: 12px;
+  font-size: 10px;
+  height: 23px;
+}
+
+.headericons {
+  padding-right: 10px;
+}
+
+.socialmedia {
+  opacity: 0.4;
+  font-size: 14px;
+  color: #eee;
+  font-weight: bold;
+  margin: 0;
+  padding: 8px 0 0 0px;
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+}
+.socialmedia:hover {
+  opacity: 1.0;
+}
+
+.testing {
+  font-size: 14px;
+  color: #eee;
+  font-weight: bold;
+  background: url(https://humblebundle-a.akamaihd.net/static/hashed/82071f0b6aec57b6743867497e8ddfaa0a2ae5b4.svg) no-repeat left center;
+  margin: 0;
+  padding: 15px 0 0 36px;
+  height: 31px;
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menu3 {
+  margin-left: 5%;
+}
+
+#nav2 {
+  width: 100%;
+  height: 58px;
+  background: #171a1c;
+}
+
+.navigation2 {
+  background: #171a1c;
+  height: 58px;
+  width: 1020px;
+  margin: 0 auto;
+}
+.navigation2 a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.navigation2 li {
+  margin-top: 5px;
+  list-style: none;
+  width: 22.5%;
+  text-align: center;
+  float: left;
+}
+.navigation2 li:last-child {
+  padding-right: 5%;
+}
+
+#active {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  background: #dadada;
+  color: #171a1c;
+}
+
+/************************************************************************************************************
+Function
+*************************************************************************************************************/
+/* Return Calculated Width */
+input[type="text"] {
+  padding: 7px;
+  width: 180px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px solid #CCC;
+  background: #fff;
+}
+
+.Sidebar {
+  margin-top: 20px;
+}
+
+.Sidebar li {
+  display: block;
+  border-radius: 5px;
+}
+.Sidebar li:hover {
+  background: #CCC;
+  color: #171a1c;
+}
+
+.Sidebar a {
+  color: #808080;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 9px;
+  border-radius: 5px;
+  display: block;
+}
+.Sidebar a:hover {
+  color: #000;
+}
+
+.Sidebar img {
+  margin-right: 8px;
+  opacity: 0.5;
+}
+
+.shoptext {
+  width: 88%;
+  height: 60px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: #eeeeee;
+}
+
+.shoptext h4 {
+  font-weight: bold;
+  font-size: 17px;
+  padding: 22px;
+}
+
+.shoptext, .shopimage {
+  float: left;
+}
+
+.container {
+  margin: 0 auto;
+}
+@media (min-width: 60em) {
+  .container {
+    width: 60em;
+  }
+}
+
+.col-container:before, .col-container:after {
+  content: " ";
+  display: table;
+}
+.col-container:after {
+  clear: both;
+}
+.col-container {
+  *zoom: 1;
+}
+
+/*class used for all the colums*/
+.col {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 1em 0 0 0;
+}
+@media (min-width: 60em) {
+  .col {
+    margin-left: 1em;
+  }
+}
+.col:first-child {
+  margin-left: 0;
+}
+
+/*This is the 2 column layout however this was not equal spacing so i altered the width from the numberr of colums which is 2 to 1.5 so it is larger*/
+.col-2 {
+  float: left;
+}
+@media (min-width: 60em) {
+  .col-2 {
+    width: 39.66667em;
+  }
+}
+
+/*This is the 2 column layout however this was not equal spacing so i altered the width from the numberr of colums which is 2 to 4 so it is smaller*/
+.col-21 {
+  float: left;
+}
+@media (min-width: 60em) {
+  .col-21 {
+    width: 14.25em;
+  }
+}
+
+.longlist {
+  float: left;
+}
+
+.col-3 {
+  float: left;
+  height: 189px;
+}
+@media (min-width: 60em) {
+  .col-3 {
+    width: 19.33333em;
+  }
+}
+
+.col-5 {
+  text-align: center;
+  height: 5.5em;
+}
+@media (min-width: 60em) {
+  .col-5 {
+    width: 5.6em;
+  }
+}
+.col-5 p {
+  font-size: 10px;
+}
+.col-5 img {
+  margin: 0 auto;
+  display: block;
+}
+
+.double-col-3 {
+  float: left;
+  height: 378px;
+}
+@media (min-width: 60em) {
+  .double-col-3 {
+    width: 39.66667em;
+  }
+}
+
+.col-3 img:hover {
+  background: black;
+  opacity: 0.3;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.double-col-3 img:hover {
+  background: black;
+  opacity: 0.3;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.vid1, .vid2, .vid3, .vid4, .vid5, .vid6 {
+  background: #000;
+}
+
+.header2 {
+  color: #808080;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 9px;
+  border-radius: 5px;
+  display: block;
+}
+.header2:hover {
+  color: #000;
+}
+
+.double-col-3 .vise {
+  visibility: hidden;
+  position: absolute;
+  top: 400px;
+  right: 200px;
+  width: 100%;
+}
+
+.double-col-3:hover .vise {
+  visibility: visible;
+}
+
+.left {
+  float: left;
+}
+
+.thelogo {
+  margin-top: 3%;
+  width: 40%;
+}
+
+.weirdicons {
+  width: 100%;
+}
+
+.longlist {
+  margin-top: 4%;
+}
+
+#footer {
+  margin: 0 auto;
+  margin-top: 9%;
+  clear: both;
+}
+#footer li {
+  color: #eee;
+  display: inline;
+}
+#footer a {
+  padding: 5% 5% 0 0;
+  color: #808080;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+}
